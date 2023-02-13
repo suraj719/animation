@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        background-color: black;
+    }
+    .upper{
+        /*display:flex;*/
+        margin-top: 210px;
+        margin-left: 150px;
+        animation-name: pulse;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes pulse {
+        0%{transform: scale(0.5);}
+    }
+    .cir1{
+        width:200px;
+        height: 200px;
+        position: absolute;
+        margin-left:100px;
+        background-color: red;
+        border-radius: 50%;
+    }
+    .cir2{
+        position: relative;
+        width:200px;
+        height: 200px;
+        background-color: red;
+        border-radius: 50%;
+        margin-left:260px;
+    }
+    .square{
+        margin-left:180px;
+        margin-top:-120px;
+        width:200px;
+        height:200px;
+        background-color: red;
+        transform: rotate(45deg);
+    }
+</style>
+
+</head>
+<body>
+    <div class="upper">
+        <div class="cir1"></div>
+        <div class="cir2"></div>
+    
+        <div class="square"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <style>
+        body{
+            background-color: tan;
+            
+        }
+        .bor:hover {
+            border-left:5px solid cyan;
+            padding:5px;
+        }
+        .cir {
+            width: 100px;
+            height:100px;
+            background-color: rgb(0, 255, 89);
+            margin:0 50%;
+        }
+        /*
+        .car,.road {
+            margin-left:80px;
+        }
+        .car{
+            margin-top: 150px;;
+        }*/
+        
+        .rect {
+            width:70px;
+            height: 50px;
+            background-color: red;
+            /*margin-top: 80px;*/
+            position: relative;
+            border-radius: 10px;
+        }
+        .wheels {
+            display: flex;
+            
+        }
+        .wheel1 {
+            width:30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 50%;
+            color:white;
+            font-size:20px;
+            text-align: center;
+            position: relative;
+        }
+        .wheel2 {
+            width:30px;
+            height: 30px;
+            background-color: black;
+            margin-left:15px;
+            border-radius: 50%;
+            color:white;
+            font-size:20px;
+            text-align: center;
+            position: relative;
+        }
+        .car > .rect {
+            animation-name: travel;
+            animation-duration:7s;
+            animation-iteration-count: infinite;
+        }
+        .car > .wheels> .wheel1,.wheel2 {
+            animation-name: roundwheel;
+            animation-duration:7s;
+            animation-iteration-count: infinite;
+        }
+        
+       /* .car:hover > .rect{
+            animation-name: travel;
+            animation-duration:7s;
+            animation-iteration-count: infinite;
+        }
+        .car:hover> .wheels> .wheel1{
+            animation-name: roundwheel;
+            animation-duration:7s;
+            animation-iteration-count: infinite;
+        }
+        .car:hover> .wheels> .wheel2{
+            animation-name: roundwheel;
+            animation-duration:7s;
+            animation-iteration-count: infinite;
+        }*/
+        .road{
+            width: 600px;
+            height: 30px;
+            background-color: black;
+            color:white;
+            text-align: center;
+            font-size: 28px;
+        }
+        .cir:hover{
+            background-color: pink;
+            animation-name: rot;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+        }
+       /* .guru {
+            width:50px;
+            height: 50px;
+            background-color: rgb(34, 202, 22);
+            animation-name: example;
+            animation-duration: 4s;
+            position: relative;
+        }
+        @keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}*/
+        @keyframes travel {
+            0%{left:0px;}
+            10%{left:50px;}
+            200%{left:100px;}
+            30%{left:150px;}
+            40%{left:200px;}
+            50%{left:250px;}
+            60%{left:300px;}
+            70%{left:350px;}
+            80%{left:400px;}
+            90%{left:450px;}
+            100%{left:530px;}
+
+           /* 
+           0%{background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:300px; top:0px;}
+  75%  {background-color:green; left:400px; top:0px;}
+  100% {background-color:red; left:500px; top:0px;}*/
+        }
+        /*@keyframes roundwheel {
+            0%{left:0px;transform: rotate(360deg);}
+            10%{left:50px;transform: rotate(30deg);}
+            200%{left:100px;transform: rotate(50deg);}
+            30%{left:150px;transform: rotate(70deg);}
+            40%{left:200px;transform: rotate(90deg);}
+            50%{left:250px;transform: rotate(110deg);}
+            60%{left:300px;transform: rotate(130deg);}
+            70%{left:350px;transform: rotate(150deg);}
+            80%{left:400px;transform: rotate(170deg);}
+            90%{left:450px;transform: rotate(190deg);}
+            100%{left:530px;transform: rotate(210deg);}
+        }*/
+
+        @keyframes roundwheel {
+            0%{left:0px;transform: rotate(0deg);}
+            10%{left:50px;transform: rotate(45deg);}
+            200%{left:100px;transform: rotate(90deg);}
+            30%{left:150px;transform: rotate(135deg);}
+            40%{left:200px;transform: rotate(180deg);}
+            50%{left:250px;transform: rotate(225deg);}
+            60%{left:300px;transform: rotate(270deg);}
+            70%{left:350px;transform: rotate(315deg);}
+            80%{left:400px;transform: rotate(360deg);}
+            90%{left:450px;transform: rotate(90deg);}
+            100%{left:530px;transform: rotate(135eg);}
+        }
+
+
+        @keyframes rot {
+            0%{transform: rotate(0deg);background-color: bisque;}
+            10%{transform: rotate(10deg);background-color: brown;}
+            20%{transform: rotate(20deg);background-color: chartreuse;}
+            30%{transform: rotate(30deg);background-color: darkkhaki;}
+            40%{transform: rotate(40deg);background-color: aquamarine;}
+            50%{transform: rotate(50deg);background-color: darkorange;}
+            60%{transform: rotate(60deg);background-color: beige;}
+            70%{transform: rotate(70deg);background-color: rgb(223, 134, 134);}
+            80%{transform: rotate(80deg);background-color: rgb(82, 220, 64);}
+            100%{transform: rotate(90deg);background-color: rgb(233, 225, 65);}
+        }
+    </style>
+</head>
+<body>
+   
+   <hr>
+    <div class="bor">Lorem ipsum dolor sit amet consectetur.</div>
+    <hr>
+    <div class="bor">Lorem ipsum dolor sit amet consectetur.</div>
+   <hr>
+   <div class="cir"></div>
+
+   <div class="car">
+    <div class="rect"></div>
+    <div class="wheels">
+        <div class="wheel1">.....</div>
+        <div class="wheel2">.....</div>
+    </div>
+   </div>
+   <div class="road">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</div>
+   
+   
+</body>
+</html>
